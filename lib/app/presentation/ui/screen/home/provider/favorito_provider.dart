@@ -2,7 +2,9 @@ import 'package:clothesstore/app/domain/model/produtos.dart';
 import 'package:flutter/cupertino.dart';
 
 class FavoritoProvider extends ChangeNotifier {
-  final favoritos = <Products>[];
+  final _favoritos = <Products>[];
+
+  List<Products> get favoritos => _favoritos;
 
   bool isFavorite(Products product) {
     return favoritos.contains(product);

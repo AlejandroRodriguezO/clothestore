@@ -15,8 +15,6 @@ class DetailProvider extends ChangeNotifier {
   void decrement() {
     if (_count > 1) {
       _count--;
-    }else{
-
     }
     notifyListeners();
   }

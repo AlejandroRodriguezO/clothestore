@@ -7,57 +7,57 @@ class Products {
     required this.price,
     required this.prices,
     required this.salePrice,
-    required this.currencyId,
-    required this.availableQuantity,
-    required this.soldQuantity,
-    required this.buyingMode,
-    required this.listingTypeId,
-    required this.stopTime,
-    required this.condition,
+    this.currencyId,
+    this.availableQuantity,
+    this.soldQuantity,
+    this.buyingMode,
+    this.listingTypeId,
+    this.stopTime,
+    this.condition,
     required this.permalink,
     required this.thumbnail,
-    required this.thumbnailId,
-    required this.acceptsMercadopago,
-    required this.installments,
-    required this.address,
-    required this.shipping,
-    required this.sellerAddress,
-    required this.attributes,
-    required this.differentialPricing,
-    required this.originalPrice,
-    required this.categoryId,
-    required this.officialStoreId,
-    required this.domainId,
-    required this.catalogProductId,
-    required this.tags,
-    required this.orderBackend,
-    required this.useThumbnailId,
+    this.thumbnailId,
+    this.acceptsMercadopago,
+    this.installments,
+    this.address,
+    this.shipping,
+    this.sellerAddress,
+    this.attributes,
+    this.differentialPricing,
+    this.originalPrice,
+    this.categoryId,
+    this.officialStoreId,
+    this.domainId,
+    this.catalogProductId,
+    this.tags,
+    this.orderBackend,
+    this.useThumbnailId,
   });
 
   String id;
   String siteId;
   String title;
-  String currencyId;
-  String buyingMode;
-  String listingTypeId;
-  String condition;
+  String? currencyId;
+  String? buyingMode;
+  String? listingTypeId;
+  String? condition;
   String permalink;
   String thumbnail;
-  String thumbnailId;
-  String categoryId;
-  String domainId;
+  String? thumbnailId;
+  String? categoryId;
+  String? domainId;
 
   Map<String, dynamic> seller;
   Map<String, dynamic> prices;
-  Map<String, dynamic> installments;
-  Map<String, dynamic> address;
-  Map<String, dynamic> shipping;
-  Map<String, dynamic> sellerAddress;
+  Map<String, dynamic>? installments;
+  Map<String, dynamic>? address;
+  Map<String, dynamic>? shipping;
+  Map<String, dynamic>? sellerAddress;
 
   int price;
-  int availableQuantity;
-  int soldQuantity;
-  int orderBackend;
+  int? availableQuantity;
+  int? soldQuantity;
+  int? orderBackend;
 
   dynamic salePrice;
   dynamic originalPrice;
@@ -65,11 +65,11 @@ class Products {
   dynamic officialStoreId;
   dynamic catalogProductId;
 
-  DateTime stopTime;
-  bool acceptsMercadopago;
-  bool useThumbnailId;
-  List attributes;
-  List tags;
+  DateTime? stopTime;
+  bool? acceptsMercadopago;
+  bool? useThumbnailId;
+  List? attributes;
+  List? tags;
 
   factory Products.fromJson(Map<String, dynamic> json) => Products(
         id: json["id"] as String,
@@ -119,7 +119,7 @@ class Products {
         "sold_quantity": soldQuantity,
         "buying_mode": buyingMode,
         "listing_type_id": listingTypeId,
-        "stop_time": stopTime.toIso8601String(),
+        "stop_time": stopTime!.toIso8601String(),
         "condition": condition,
         "permalink": permalink,
         "thumbnail": thumbnail,

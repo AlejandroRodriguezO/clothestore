@@ -16,12 +16,12 @@ class ResultSearch extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Provider.of<SearchProvider>(context, listen: false);
+    final _search = context.read<SearchProvider>();
     final price = NumberFormat("#,##0", "es_CO");
     final size = MediaQuery.of(context).size;
 
     return FutureBuilder<List<Products>>(
-      future: a.data(query),
+      future: _search.data(query),
       builder: (context, snapshot) {
         if (!snapshot.hasData) {
           return const Center(

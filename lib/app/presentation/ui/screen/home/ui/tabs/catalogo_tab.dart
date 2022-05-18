@@ -1,4 +1,3 @@
-
 import 'package:clothesstore/app/presentation/ui/screen/home/ui/widgets/custom_appbar.dart';
 import 'package:clothesstore/app/presentation/ui/screen/search/provider/search_provider.dart';
 import 'package:clothesstore/app/presentation/ui/screen/search/ui/widgets/search_detail.dart';
@@ -13,7 +12,7 @@ class CatalogoTab extends StatelessWidget {
     return Scaffold(
         body: Consumer<SearchProvider>(
       builder: (_, searchProvider, __) => PageView(
-        
+        physics: const NeverScrollableScrollPhysics(),
         controller: searchProvider.pageController,
         children: [
           ListView(
