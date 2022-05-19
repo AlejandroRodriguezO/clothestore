@@ -61,7 +61,7 @@ corre la aplicacion en un dispositivo movil.
         </tr>
         <tr>
            <td> <img src="./screenshots/search4.png" alt="Home-Dark" width="250"/></td>
-            <td> <img src="./screenshots/detail.png" alt="alert-ligth" width="250"/></td>
+            <td> <img src="./screenshots/favorito.png" alt="alert-ligth" width="250"/></td>
         </tr>
         <tr>
             <th><Strong>Pestaña 'categorias'</Strong></th>
@@ -70,6 +70,14 @@ corre la aplicacion en un dispositivo movil.
         <tr>
            <td> <img src="./screenshots/categorias.png" alt="Home-Dark" width="250"/></td>
             <td> <img src="./screenshots/her.png" alt="alert-ligth" width="250"/></td>
+        </tr>
+        <tr>
+            <th><Strong>favoritos</Strong></th>
+            <th><Strong>carrito</Strong></th>
+        </tr>
+        <tr>
+           <td> <img src="./screenshots/screenFavorito.png" alt="Home-Dark" width="250"/></td>
+            <td> <img src="./screenshots/carrito.png" alt="alert-ligth" width="250"/></td>
         </tr>
     </tbody>
   </table>
