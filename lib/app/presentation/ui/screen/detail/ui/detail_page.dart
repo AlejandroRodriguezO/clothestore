@@ -27,6 +27,8 @@ class _DetailPageState extends State<DetailPage> {
     final size = MediaQuery.of(context).size;
     final favorito = context.watch<FavoritoProvider>();
     final _cart = context.watch<CarritoProvider>();
+
+    
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,

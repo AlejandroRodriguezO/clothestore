@@ -5,7 +5,7 @@ class CarritoProvider extends ChangeNotifier {
   Map<String, Products> _cart = {};
 
   Map<String, Products> get cart => _cart;
-  int counter = 0;
+  int counter = 1;
 
   void addToCart(Products item, int c) {
     Map<String, Products> copy = Map<String, Products>.from(_cart);

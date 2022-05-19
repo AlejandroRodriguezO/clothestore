@@ -1,5 +1,7 @@
+
 import 'package:clothesstore/app/presentation/ui/screen/home/ui/tabs/home_tab.dart';
 import 'package:flutter/material.dart';
+
 
 class BuildTabBarView extends StatelessWidget {
   const BuildTabBarView({Key? key}) : super(key: key);
