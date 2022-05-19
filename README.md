@@ -19,6 +19,9 @@ Descargar o clonar este respositorio usando este link:
 Despues de clonar o descargar el proyecto abralo en VsCode, Android Studio, Intellij o su editor preferido que tenga configurado flutter y correr el comando
 
 ```
+flutter clean
+```
+```
 flutter pub get
 ```
 
@@ -26,6 +29,13 @@ flutter pub get
 
 corre la aplicacion en un dispositivo movil.
 
+**Paso 4:**
+
+En caso de ejecutar pruebas puede realizarlo con el comando:
+
+```
+flutter test 
+```
 
 ### Anexo imagenes del funcionamiento
 
